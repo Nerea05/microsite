@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORÁGINE</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css.map" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css.map" />
+    <script src="app/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="menuToggle">
+            <!--
+          checkbox escondida
+          -->
+            <input type="checkbox" />
+
+            <!-- 
+          menu hamburguesa
+          -->
+            <span></span>
+            <span></span>
+            <span></span>
+           
+            <ul id="menu">
+                <a href="#"><img id="logo" src="assets/images/logo-voragine.png" alt="logo-revista"></a>
+                <a href="detalle.html">
+                    <li>Nosotrxs</li>
+                </a>
+                <a href="detalle.html">
+                    <li>Main Subject</li>
+                </a>
+                <a href="detalle.html">
+                    <li>Fck news</li>
+                </a>
+                <a href="detalle.html">
+                    <li>Cultura</li>
+                </a>
+                <a href="detalle.html">
+                    <li>Interview</li>
+                </a>
+                <div class="underbar"></div>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+
+        <div id="mainGrid">
+            <ul id="noticias"></ul>
+            <div id="red-box">
+                <ul id="sidebar">
+                    <li><h3 id="fcknewstitle">FCKNEWS</h3></li>
+                    <li class="fnew"> <img class="fcknewsimg" src="assets/images/rubius2.png" alt="rubius8bit"><br><span class="fcknewssub">El rubius se sube a la nube</span> <br> <p>Los youtubers no quieren asumir las responsabilidades que conlleva ser una persona física</p>  </li>
+                    <li class="fnew">  <img class="fcknewsimg" src="assets/images/babyBeer.png" alt="bebé"> <br><span class="fcknewssub">Un bebé de 18 meses pide un año sabático porque ya no puede más con la vida</span> <p>Los padres del bebé han afirmado que no le han podido conceder la excedencia</p></li>
+                    <li class="fnew"><img class="fcknewsimg" src="assets/images/botella.png" alt="bebé"><br><span class="fcknewssub">Se emociona al reencontrarse en el mar con una botella de plástico que abandonó hace diez años</span> <p>La ha vuelto a arrojar al agua porque "al pasado no hay que anclarse"</p></li>
+                </ul>
+                <a target="_blank" href="https://es.wallapop.com/"><img id="ad" src="assets/images/adversiting.png" alt=""></a>
+            </div>
+           </div>
+    </main>
+    <div id="ftr">
+        <div class="emailBox">
+            <label id="emailAddress-message" for="emailAddress">Suscríbete a nuestra revista!</label><br>
+            <input id="emailAddress" type="email" size="64" maxLength="64" required
+                   placeholder="Enter your email">
+            <input id="btn2" type="submit" value="submit">
+    </div>
+
+</body>
+</html>

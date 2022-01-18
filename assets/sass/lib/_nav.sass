@@ -1,0 +1,128 @@
+body
+  margin: 0
+  padding: 0
+  background: #ffffff
+  color: #232323
+  font-family: 'Poppins', sans-serif
+#logo
+    width: 200px
+    padding: 10px
+#menuToggle
+  background-color: #ffffff
+  display: block
+  position: relative
+  padding: 30px
+  z-index: 1
+  -webkit-user-select: none
+  user-select: none
+
+  a
+    text-decoration: none
+    color: #ffffff
+    transition: color 0.3s ease
+
+    &:nth-of-type(1):hover
+      color: #F062C3
+
+    &:nth-of-type(2):hover
+      color: #36FAFF
+
+    &:nth-of-type(3):hover
+      color: #DB731F
+
+    &:nth-of-type(4):hover
+      color: #587AF5
+
+    &:nth-of-type(5):hover
+      color: #711dd1
+
+  input
+    display: block
+    position: absolute
+    width: 25px
+    height: 20px
+    margin: 0
+    padding: 20px
+    cursor: pointer
+    opacity: 0
+
+    // esconde el checkbox
+    z-index: 2
+
+    /* Poner el checkbox encima del icono de hamburguesa
+
+    -webkit-touch-callout: none
+
+  span
+    display: block
+    width: 18px
+    height: 2px
+    margin-bottom: 4px
+    position: relative
+    background: #232323
+    border-radius: 3px
+    z-index: 1
+    transform-origin: 4px 0px
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+
+
+// Poner el menú en la esquiza izquierda
+
+#menu
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  margin: 0
+  padding: 30px
+  padding-top: 80px
+  background: #313131
+  list-style-type: none
+
+  //* Stops the flickering of text in Safari
+  -webkit-font-smoothing: antialiased
+  transform-origin: 0% 0%
+  transform: translate(-100%, 0)
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
+
+  li
+    padding: 10px 0
+    font-size: 16px
+
+// Men aparece desde la izquierda
+
+#menuToggle input:checked ~ ul
+  transform: none
+
+//RESPONSIVE
+@media only screen and (min-width: 768px)
+  #menuToggle
+    input, span
+      display: none
+
+  #menu
+    display: flex
+    flex-direction: row
+    background: #ffffff
+    padding: 0
+    padding-left: 15px
+    height: auto
+    transform: none
+    transition: none
+
+    li
+      padding: 15px
+
+  #menuToggle a
+    color: #232323
+
+  .underbar
+    position: absolute
+    top: 45px
+    left: -10px
+    width: 0
+    height: 4px
+    background: rgba(100, 100, 200, 0)
+    -webkit-transition: 0.5s ease
+
