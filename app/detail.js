@@ -15,7 +15,7 @@ window.onload = () => {
             document.write(user.contenido)
             document.write(user.image)*/
             let caja= document.querySelector(".caja");
-            let main=`<h2>${user.titulo}</h2> <div class="image-detail"><img class="imagen-navidad" src="${user.video}" alt=""> <img class="imagen-hijos" src="${user.image2}" alt=""></div>`;
+            let main=`<h2>${user.titulo}</h2><img class="imagen-yungbludinfo" src="${user.image4}" alt=""> <img class="imagen-hijos" src="${user.image2}" alt=""> <img class="imagen-navidad" src="${user.image3}" alt=""> `;
             let contenido = "";
             if(Array.isArray(user.contenido)){
                 /*recorremos el array*/ 
